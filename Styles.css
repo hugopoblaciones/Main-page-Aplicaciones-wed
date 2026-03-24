@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #0f172a;
+    position: sticky;
+    top: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.logo {
+    color: #60a5fa;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 30px;
+    color: #cbd5f5;
+}
+
+.btn {
+    background: linear-gradient(45deg, #3b82f6, #2563eb);
+    padding: 14px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+/* MÓVILES */
+.mobiles {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.mobiles h2 {
+    margin-bottom: 40px;
+}
+
+.mobiles-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.mobile-card {
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    width: 220px;
+}
+
+.img-placeholder {
+    height: 150px;
+    background-color: #334155;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #94a3b8;
+}
+
+/* BOTONES */
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #3b82f6, #2563eb);
+    border: none;
+    color: white;
+    border-radius: 6px;
+}
+
+/* PRODUCTOS */
+.products {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.products h2 {
+    margin-bottom: 40px;
+}
+
+.products-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    width: 250px;
+}
+
+/* SOBRE NOSOTROS */
+.about {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #cbd5f5;
+}
+
+/* CONTACTO */
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #020617;
+    margin-top: 50px;
+    color: #94a3b8;
+}
