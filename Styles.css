@@ -79,6 +79,16 @@ body {
     width: 220px;
 }
 
+/* 🔥 IMAGEN AJUSTADA */
+.mobile-card .mobile-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* PLACEHOLDER */
 .img-placeholder {
     height: 150px;
     background-color: #334155;
@@ -98,6 +108,7 @@ button {
     border: none;
     color: white;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 /* PRODUCTOS */
@@ -122,6 +133,15 @@ button {
     padding: 25px;
     border-radius: 12px;
     width: 250px;
+}
+
+/*  IMAGEN EN PRODUCTOS */
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 /* SOBRE NOSOTROS */
