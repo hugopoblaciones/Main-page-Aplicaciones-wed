@@ -1,43 +1,86 @@
+/* ========================================
+     ESTILOS DEL LOGIN
+     ======================================== */
+
+/* Estilo del cuerpo */
 body {
     font-family: 'Segoe UI', sans-serif;
     background: linear-gradient(135deg, #0f172a, #020617);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     color: white;
 }
 
+/* Contenedor del login */
 .login-container {
     background-color: #1e293b;
-    padding: 30px;
-    border-radius: 10px;
-    width: 300px;
+    padding: 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 350px;
     text-align: center;
 }
 
+/* Título */
 .login-container h2 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    color: #60a5fa;
 }
 
+/* Formulario */
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Campos de texto */
 .login-container input {
     width: 100%;
-    padding: 10px;
+    padding: 12px 15px;
     margin-bottom: 15px;
     border: none;
     border-radius: 6px;
-}
-
-.login-container button {
-    width: 100%;
-    padding: 10px;
-    background-color: #3b82f6;
-    border: none;
+    background-color: #0f172a;
     color: white;
-    border-radius: 6px;
+    font-size: 1rem;
 }
 
-#error {
-    color: red;
-    margin-top: 10px;
+/* Placeholder */
+.login-container input::placeholder {
+    color: #64748b;
+}
+
+/* Botón Iniciar Sesión */
+.btn-login {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Botón Registrarme */
+.btn-registro {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Enlace volver */
+.volver {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.9rem;
 }

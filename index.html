@@ -1,115 +1,108 @@
+<!-- ========================================
+     PÁGINA PRINCIPAL - Tech Wise
+     Tienda de móviles
+     ======================================== -->
+
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+    <!-- Configuración básica -->
     <meta charset="UTF-8">
     <title>Tech Wise - Tienda de Móviles</title>
+    <!-- Conectar con el archivo de estilos -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
+    <!-- ===== ENCABEZADO ===== -->
     <header class="navbar">
+        <!-- Logo de la tienda -->
         <h2 class="logo">Tech Wise</h2>
+        
+        <!-- Menú de navegación -->
         <nav>
-            <a href="#">Inicio</a>
+            <a href="index.html">Inicio</a>
             <a href="#moviles">Móviles</a>
-            <a href="#top">Lo más vendido</a>
-            <a href="login.html">Login</a>
+            <a href="carrito.html">Carrito</a>
+            <a href="login.html" class="btn-nav">Iniciar Sesión</a>
+            <a href="login.html" class="btn-nav">Registrarme</a>
         </nav>
     </header>
 
+    <!-- ===== CONTENIDO PRINCIPAL ===== -->
     <main>
 
+        <!-- Sección de inicio (banner) -->
         <section class="hero">
             <h1>Los mejores móviles al mejor precio</h1>
             <p>Encuentra tu móvil en TechWise.</p>
             <a href="#moviles" class="btn">Ver Móviles</a>
         </section>
 
+        <!-- Sección de móviles -->
         <section class="mobiles" id="moviles">
             <h2>Nuestros Móviles</h2>
 
+            <!-- Contenedor de productos -->
             <div class="mobiles-container">
 
+                <!-- Producto 1: iPhone -->
                 <div class="mobile-card">
-           <img src="Iphone 15.jpg" alt="iPhone 15" class="mobile-img">
+                    <img src="Iphone 15.jpg" alt="iPhone 15">
                     <h3>iPhone 15</h3>
                     <p>Desde 959€</p>
-                    <button>Comprar</button>
+                    <a href="compra-iphone15.html" class="btn-comprar">Ver producto</a>
                 </div>
 
+                <!-- Producto 2: Samsung -->
                 <div class="mobile-card">
-                     <img src="samsung galaxy s24.jpg" alt="Samsung Galaxy S24" class="mobile-img">
+                    <img src="samsung galaxy s24.jpg" alt="Samsung Galaxy S24">
                     <h3>Samsung Galaxy S24</h3>
                     <p>Desde 899€</p>
-                    <button>comprar</button>
-                    
+                    <a href="compra-samsung-galaxys24.html" class="btn-comprar">Ver producto</a>
                 </div>
 
+                <!-- Producto 3: Xiaomi -->
                 <div class="mobile-card">
-                    <img src="xioami14.png" alt="Xiaomi 14 verde" class="mobile-img">
-                    <h3>Xiaomi 14</h3>
-                    <p>Desde 749€</p>
-                    <button>Comprar</button>
-                </div>
-
-                <div class="mobile-card">
-                    <img src="google pixel 8.jpg" alt="Google Pixel 8" class="mobile-img">
-                    <h3>Google Pixel 8</h3>
-                    <p>Desde 799€</p>
-                    <button>Comprar</button>
-                </div>
-
-            </div>
-        </section>
-
-        <section class="products" id="top">
-            <h2>Móviles más vendidos</h2>
-
-            <div class="products-container">
-
-                <div class="product-card">
-                    <img src="Iphone 15.jpg" alt="iPhone 15" class="mobile-img">
-                    <h3>iPhone 15</h3>
-                    <p>Desde 959€</p>
-                    <button>Comprar</button>
-                </div>
-
-                <div class="product-card">
-                    <img src="samsung galaxy s24.jpg" alt="Samsung Galaxy S24" class="mobile-img">
-                    <h3>Samsung Galaxy S24</h3>
-                    <p>Desde 899€</p>
-                    <button>Comprar</button>
-                </div>
-
-                <div class="product-card">
                     <img src="xioami14.png" alt="Xiaomi 14">
                     <h3>Xiaomi 14</h3>
                     <p>Desde 749€</p>
-                    <button>Comprar</button>
+                    <a href="compra-xioami14.html" class="btn-comprar">Ver producto</a>
+                </div>
+
+                <!-- Producto 4: Pixel -->
+                <div class="mobile-card">
+                    <img src="google pixel 8.jpg" alt="Google Pixel 8">
+                    <h3>Google Pixel 8</h3>
+                    <p>Desde 799€</p>
+                    <a href="compra-google-pixel8.html" class="btn-comprar">Ver producto</a>
                 </div>
 
             </div>
         </section>
 
-        <!-- SOBRE NOSOTROS -->
+        <!-- Sección sobre nosotros -->
         <section class="about">
             <h2>Sobre Nosotros</h2>
             <p>
-                En Tech Wise os ofrecemos los mejores móviles.
-                Nuestro objetivo es ayudarte a encontrar el mejor móvil para vosotros
+                En Tech Wise ofrecemos los mejores móviles del mercado.
+                Nuestro objetivo es ayudarte a encontrar el dispositivo perfecto
                 con la mejor calidad y garantía de 3 años.
             </p>
         </section>
 
-        <!-- CONTACTO -->
+        <!-- Sección de contacto -->
         <section class="contact">
-            <h2>Contactos:</h2>
-            <p>gmail: techwise@gmail.com</p>
-            <p>Numero de teléfono: +34 643 456 789</p>
+            <h2>Contacto</h2>
+            <p>Email: techwise@gmail.com</p>
+            <p>Teléfono: +34 643 456 789</p>
         </section>
 
     </main>
 
+    <!-- ===== PIE DE PÁGINA ===== -->
     <footer>
         <p>© 2026 Tech Wise - Tienda Online</p>
     </footer>

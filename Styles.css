@@ -1,16 +1,27 @@
+/* ========================================
+     ESTILOS GENERALES - Tech Wise
+     ======================================== */
+
+/* ----- Estilo para todos los elementos ----- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ----- Estilo del cuerpo ----- */
 body {
     font-family: 'Segoe UI', sans-serif;
     background: linear-gradient(135deg, #0f172a, #020617);
     color: white;
 }
 
-/* NAVBAR */
+
+/* ========================================
+     ENCABEZADO
+     ======================================== */
+
+/* Barra de navegación */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -21,17 +32,31 @@ body {
     top: 0;
 }
 
+/* Enlaces del menú */
 .navbar a {
     color: white;
     text-decoration: none;
     margin-left: 20px;
 }
 
+/* Logo */
 .logo {
     color: #60a5fa;
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
-/* HERO */
+/* Botones del menú */
+.btn-nav {
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+
+/* ========================================
+     BANNER PRINCIPAL
+     ======================================== */
+
 .hero {
     text-align: center;
     padding: 120px 20px;
@@ -47,6 +72,7 @@ body {
     color: #cbd5f5;
 }
 
+/* Botón general */
 .btn {
     background: linear-gradient(45deg, #3b82f6, #2563eb);
     padding: 14px 30px;
@@ -55,7 +81,11 @@ body {
     color: white;
 }
 
-/* MÓVILES */
+
+/* ========================================
+     SECCIÓN MÓVILES
+     ======================================== */
+
 .mobiles {
     text-align: center;
     padding: 80px 20px;
@@ -63,8 +93,10 @@ body {
 
 .mobiles h2 {
     margin-bottom: 40px;
+    font-size: 2rem;
 }
 
+/* Contenedor de productos */
 .mobiles-container {
     display: flex;
     justify-content: center;
@@ -72,15 +104,16 @@ body {
     gap: 30px;
 }
 
+/* Tarjeta de producto */
 .mobile-card {
     background-color: #1e293b;
     padding: 20px;
     border-radius: 12px;
     width: 220px;
+    text-align: center;
 }
 
-/* 🔥 IMAGEN AJUSTADA */
-.mobile-card .mobile-img {
+.mobile-card img {
     width: 100%;
     height: 150px;
     object-fit: cover;
@@ -88,63 +121,22 @@ body {
     margin-bottom: 15px;
 }
 
-/* PLACEHOLDER */
-.img-placeholder {
-    height: 150px;
-    background-color: #334155;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #94a3b8;
-}
-
-/* BOTONES */
-button {
+/* Botón comprar */
+.btn-comprar {
+    display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background: linear-gradient(45deg, #3b82f6, #2563eb);
-    border: none;
+    background: #3b82f6;
     color: white;
+    text-decoration: none;
     border-radius: 6px;
-    cursor: pointer;
 }
 
-/* PRODUCTOS */
-.products {
-    text-align: center;
-    padding: 80px 20px;
-}
 
-.products h2 {
-    margin-bottom: 40px;
-}
+/* ========================================
+     SOBRE NOSOTROS
+     ======================================== */
 
-.products-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.product-card {
-    background-color: #1e293b;
-    padding: 25px;
-    border-radius: 12px;
-    width: 250px;
-}
-
-/*  IMAGEN EN PRODUCTOS */
-.product-card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-/* SOBRE NOSOTROS */
 .about {
     text-align: center;
     padding: 60px 20px;
@@ -152,29 +144,45 @@ button {
 
 .about h2 {
     margin-bottom: 20px;
+    font-size: 2rem;
 }
 
 .about p {
     max-width: 600px;
     margin: 0 auto;
     color: #cbd5f5;
+    line-height: 1.6;
 }
 
-/* CONTACTO */
+
+/* ========================================
+     CONTACTO
+     ======================================== */
+
 .contact {
     text-align: center;
     padding: 60px 20px;
+    background-color: #1e293b;
 }
 
 .contact h2 {
     margin-bottom: 20px;
+    font-size: 2rem;
 }
 
-/* FOOTER */
+.contact p {
+    margin: 10px 0;
+    color: #cbd5f5;
+}
+
+
+/* ========================================
+     PIE DE PÁGINA
+     ======================================== */
+
 footer {
     text-align: center;
     padding: 20px;
     background-color: #020617;
-    margin-top: 50px;
     color: #94a3b8;
 }

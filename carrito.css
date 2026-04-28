@@ -1,0 +1,41 @@
+/* ========================================
+     ESTILOS DEL CARRITO
+     ======================================== */
+
+/* Contenedor principal */
+.carrito-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.carrito-container h1 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #60a5fa;
+}
+
+/* Mensaje carrito vacío */
+.carrito-vacio {
+    color: #94a3b8;
+    padding: 40px;
+    background-color: #1e293b;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+/* Botón seguir comprando */
+.botones-carrito {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-seguir {
+    padding: 14px 30px;
+    background-color: #334155;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}

@@ -1,27 +1,35 @@
+<!-- ========================================
+     PÁGINA DE LOGIN
+     ======================================== -->
+
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Login - Tech Wise</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="login.css">
 </head>
+
 <body>
 
+    <!-- Contenedor del login -->
     <div class="login-container">
         <h2>Iniciar Sesión</h2>
 
-        <form id="loginForm">
-            <input type="email" id="email" placeholder="Correo electrónico" required>
-            <input type="password" id="password" placeholder="Contraseña" required>
-            <button type="submit">Entrar</button>
+        <!-- Formulario -->
+        <form>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="password" placeholder="Contraseña" required>
+            
+            <!-- Botones decorativos -->
+            <a href="#" class="btn-login">Iniciar Sesión</a>
+            <a href="#" class="btn-registro">Registrarme</a>
         </form>
 
-        <p id="error"></p>
-
-        <a href="index.html">Volver a TechWise</a>
+        <a href="index.html" class="volver">Volver a la tienda</a>
     </div>
-
-   
 
 </body>
 </html>

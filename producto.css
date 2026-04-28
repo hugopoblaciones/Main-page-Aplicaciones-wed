@@ -1,0 +1,88 @@
+/* ========================================
+     ESTILOS DE PÁGINAS DE PRODUCTO
+     ======================================== */
+
+/* Contenedor del producto */
+.producto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 40px;
+    flex-wrap: wrap;
+}
+
+/* Imagen del producto */
+.producto-imagen {
+    flex: 1;
+    max-width: 400px;
+    min-width: 300px;
+}
+
+.producto-imagen img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* Información del producto */
+.producto-info {
+    flex: 1;
+    max-width: 500px;
+    min-width: 300px;
+}
+
+.producto-info h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #60a5fa;
+}
+
+.precio {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #22c55e;
+    margin-bottom: 25px;
+}
+
+.descripcion {
+    color: #cbd5f5;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Lista de características */
+.caracteristicas {
+    list-style: none;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #1e293b;
+    border-radius: 8px;
+}
+
+.caracteristicas li {
+    padding: 8px 0;
+    color: #cbd5f5;
+    border-bottom: 1px solid #334155;
+}
+
+.caracteristicas li:last-child {
+    border-bottom: none;
+}
+
+/* Botón añadir al carrito */
+.btn-comprar {
+    display: inline-block;
+    padding: 14px 40px;
+    background: #22c55e;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    margin-right: 20px;
+}
+
+/* Enlace ver carrito */
+.volver {
+    color: #94a3b8;
+    text-decoration: none;
+}
