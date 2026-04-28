@@ -3,60 +3,76 @@
      Tienda de móviles
      ======================================== -->
 
+<!-- DOCTYPE: le dice al navegador que usamos HTML5 (la versión moderna) -->
 <!DOCTYPE html>
+
+<!-- html: etiqueta raíz que envuelve toda la página. lang="es" indica que el idioma es español -->
 <html lang="es">
 
+<!-- head: sección de configuración, el usuario no ve su contenido directamente -->
 <head>
-    <!-- Configuración básica -->
+    <!-- meta charset: permite usar tildes, ñ y caracteres especiales correctamente -->
     <meta charset="UTF-8">
+    <!-- title: texto que aparece en la pestaña del navegador -->
     <title>Tech Wise - Tienda de Móviles</title>
-    <!-- Conectar con el archivo de estilos -->
+    <!-- link: conecta este HTML con el archivo CSS que da el diseño visual -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
+<!-- body: todo lo que está aquí dentro es lo que el usuario ve en pantalla -->
 <body>
 
-    <!-- ===== ENCABEZADO ===== -->
+    <!-- header: cabecera de la página, contiene el logo y el menú de navegación -->
     <header class="navbar">
-        <!-- Logo de la tienda -->
+        <!-- h2: título de nivel 2, usado aquí como logo de la tienda -->
         <h2 class="logo">Tech Wise</h2>
-        
-        <!-- Menú de navegación -->
+
+        <!-- nav: contenedor de los enlaces del menú de navegación -->
         <nav>
+            <!-- a href: enlace. href indica a dónde lleva al hacer clic -->
             <a href="index.html">Inicio</a>
+            <!-- href="#moviles": lleva a la sección con id="moviles" dentro de esta misma página -->
             <a href="#moviles">Móviles</a>
             <a href="carrito.html">Carrito</a>
-            <a href="login.html" class="btn-nav">Iniciar Sesión</a>
-            <a href="login.html" class="btn-nav">Registrarme</a>
+            <!-- class="btn-nav": aplica estilo de botón definido en el CSS -->
+            <a href="inicio-sesion.html" class="btn-nav">Iniciar Sesión</a>
+            <a href="registro.html" class="btn-nav">Registrarme</a>
         </nav>
     </header>
 
-    <!-- ===== CONTENIDO PRINCIPAL ===== -->
+    <!-- main: contenido principal de la página -->
     <main>
 
-        <!-- Sección de inicio (banner) -->
+        <!-- section hero: banner principal con título, descripción y botón de llamada a la acción -->
         <section class="hero">
+            <!-- h1: el título más importante de la página, solo debe haber uno -->
             <h1>Los mejores móviles al mejor precio</h1>
+            <!-- p: párrafo de texto descriptivo -->
             <p>Encuentra tu móvil en TechWise.</p>
+            <!-- a btn: botón-enlace que lleva a la sección de móviles -->
             <a href="#moviles" class="btn">Ver Móviles</a>
         </section>
 
-        <!-- Sección de móviles -->
+        <!-- section mobiles: sección de productos. id="moviles" permite navegar directamente aquí desde los enlaces con href="#moviles" -->
         <section class="mobiles" id="moviles">
             <h2>Nuestros Móviles</h2>
 
-            <!-- Contenedor de productos -->
+            <!-- div mobiles-container: agrupa todas las tarjetas de producto para organizarlas en fila con CSS -->
             <div class="mobiles-container">
 
-                <!-- Producto 1: iPhone -->
+                <!-- div mobile-card: tarjeta individual de cada móvil -->
                 <div class="mobile-card">
+                    <!-- img: muestra la imagen del producto. src=ruta de la imagen, alt=texto si la imagen no carga -->
                     <img src="Iphone 15.jpg" alt="iPhone 15">
+                    <!-- h3: título de nivel 3, nombre del producto -->
                     <h3>iPhone 15</h3>
+                    <!-- p: párrafo con el precio -->
                     <p>Desde 959€</p>
+                    <!-- a btn-comprar: enlace con estilo de botón que lleva a la página de detalle del producto -->
                     <a href="compra-iphone15.html" class="btn-comprar">Ver producto</a>
                 </div>
 
-                <!-- Producto 2: Samsung -->
+                <!-- Tarjeta del Samsung Galaxy S24 -->
                 <div class="mobile-card">
                     <img src="samsung galaxy s24.jpg" alt="Samsung Galaxy S24">
                     <h3>Samsung Galaxy S24</h3>
@@ -64,7 +80,7 @@
                     <a href="compra-samsung-galaxys24.html" class="btn-comprar">Ver producto</a>
                 </div>
 
-                <!-- Producto 3: Xiaomi -->
+                <!-- Tarjeta del Xiaomi 14 -->
                 <div class="mobile-card">
                     <img src="xioami14.png" alt="Xiaomi 14">
                     <h3>Xiaomi 14</h3>
@@ -72,7 +88,7 @@
                     <a href="compra-xioami14.html" class="btn-comprar">Ver producto</a>
                 </div>
 
-                <!-- Producto 4: Pixel -->
+                <!-- Tarjeta del Google Pixel 8 -->
                 <div class="mobile-card">
                     <img src="google pixel 8.jpg" alt="Google Pixel 8">
                     <h3>Google Pixel 8</h3>
@@ -83,7 +99,7 @@
             </div>
         </section>
 
-        <!-- Sección sobre nosotros -->
+        <!-- section about: sección "Sobre Nosotros" con información de la empresa -->
         <section class="about">
             <h2>Sobre Nosotros</h2>
             <p>
@@ -93,7 +109,7 @@
             </p>
         </section>
 
-        <!-- Sección de contacto -->
+        <!-- section contact: sección de contacto con email y teléfono -->
         <section class="contact">
             <h2>Contacto</h2>
             <p>Email: techwise@gmail.com</p>
@@ -102,7 +118,7 @@
 
     </main>
 
-    <!-- ===== PIE DE PÁGINA ===== -->
+    <!-- footer: pie de página con información de copyright -->
     <footer>
         <p>© 2026 Tech Wise - Tienda Online</p>
     </footer>

@@ -2,18 +2,18 @@
      ESTILOS GENERALES - Tech Wise
      ======================================== */
 
-/* ----- Estilo para todos los elementos ----- */
+/* El selector * afecta a TODOS los elementos de la página */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0;          /* elimina el espacio exterior por defecto del navegador */
+    padding: 0;         /* elimina el relleno interior por defecto del navegador */
+    box-sizing: border-box; /* hace que el padding no agrande el tamaño del elemento */
 }
 
-/* ----- Estilo del cuerpo ----- */
+/* Estilo base del cuerpo de la página */
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #0f172a, #020617);
-    color: white;
+    font-family: 'Segoe UI', sans-serif;                    /* tipo de letra */
+    background: linear-gradient(135deg, #0f172a, #020617);  /* fondo degradado en diagonal (135 grados) de azul oscuro a negro */
+    color: white;                                           /* color del texto en toda la página */
 }
 
 
@@ -21,35 +21,35 @@ body {
      ENCABEZADO
      ======================================== */
 
-/* Barra de navegación */
+/* Barra de navegación superior */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    background-color: #0f172a;
-    position: sticky;
-    top: 0;
+    display: flex;              /* activa Flexbox para organizar logo y menú en fila */
+    justify-content: space-between; /* pone el logo a la izquierda y el menú a la derecha */
+    align-items: center;        /* alinea verticalmente los elementos al centro */
+    padding: 20px 40px;         /* espacio interior: 20px arriba/abajo, 40px izquierda/derecha */
+    background-color: #0f172a; /* color de fondo de la barra (azul muy oscuro) */
+    position: sticky;           /* la barra se queda fija al hacer scroll */
+    top: 0;                     /* fijada en la parte superior de la pantalla */
 }
 
-/* Enlaces del menú */
+/* Estilo de los enlaces dentro del menú de navegación */
 .navbar a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
+    color: white;               /* texto blanco */
+    text-decoration: none;      /* elimina el subrayado de los enlaces */
+    margin-left: 20px;          /* separa cada enlace del anterior */
 }
 
-/* Logo */
+/* Estilo del logo Tech Wise */
 .logo {
-    color: #60a5fa;
-    font-size: 1.8rem;
-    font-weight: bold;
+    color: #60a5fa;             /* color azul claro */
+    font-size: 1.8rem;          /* tamaño de letra (rem = relativo al tamaño base) */
+    font-weight: bold;          /* texto en negrita */
 }
 
-/* Botones del menú */
+/* Botones "Iniciar Sesión" y "Registrarme" del menú */
 .btn-nav {
-    padding: 8px 16px;
-    border-radius: 6px;
+    padding: 8px 16px;          /* relleno interior para dar tamaño de botón */
+    border-radius: 6px;         /* esquinas redondeadas */
 }
 
 
@@ -57,28 +57,31 @@ body {
      BANNER PRINCIPAL
      ======================================== */
 
+/* Sección hero: el banner grande con título y botón */
 .hero {
-    text-align: center;
-    padding: 120px 20px;
+    text-align: center;         /* centra el texto horizontalmente */
+    padding: 120px 20px;        /* espacio interior grande para que quede espacioso */
 }
 
+/* Título principal del banner */
 .hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 3rem;            /* letra grande */
+    margin-bottom: 20px;        /* espacio debajo del título */
 }
 
+/* Párrafo descriptivo del banner */
 .hero p {
-    margin-bottom: 30px;
-    color: #cbd5f5;
+    margin-bottom: 30px;        /* espacio debajo antes del botón */
+    color: #cbd5f5;             /* color azul muy claro */
 }
 
-/* Botón general */
+/* Botón "Ver Móviles" del banner */
 .btn {
-    background: linear-gradient(45deg, #3b82f6, #2563eb);
-    padding: 14px 30px;
-    border-radius: 8px;
-    text-decoration: none;
-    color: white;
+    background: linear-gradient(45deg, #3b82f6, #2563eb); /* fondo con degradado azul */
+    padding: 14px 30px;         /* relleno para que tenga buen tamaño */
+    border-radius: 8px;         /* esquinas redondeadas */
+    text-decoration: none;      /* sin subrayado */
+    color: white;               /* texto blanco */
 }
 
 
@@ -86,47 +89,50 @@ body {
      SECCIÓN MÓVILES
      ======================================== */
 
+/* Sección completa de los productos */
 .mobiles {
-    text-align: center;
-    padding: 80px 20px;
+    text-align: center;         /* centra el título y las tarjetas */
+    padding: 80px 20px;         /* espacio interior */
 }
 
+/* Título "Nuestros Móviles" */
 .mobiles h2 {
-    margin-bottom: 40px;
+    margin-bottom: 40px;        /* espacio entre el título y las tarjetas */
     font-size: 2rem;
 }
 
-/* Contenedor de productos */
+/* Contenedor que agrupa todas las tarjetas en fila */
 .mobiles-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
+    display: flex;              /* organiza las tarjetas en fila con Flexbox */
+    justify-content: center;    /* centra las tarjetas horizontalmente */
+    flex-wrap: wrap;            /* si no caben en una fila, las baja a la siguiente */
+    gap: 30px;                  /* espacio entre tarjetas */
 }
 
-/* Tarjeta de producto */
+/* Tarjeta individual de cada móvil */
 .mobile-card {
-    background-color: #1e293b;
-    padding: 20px;
-    border-radius: 12px;
-    width: 220px;
+    background-color: #1e293b; /* fondo azul oscuro */
+    padding: 20px;              /* relleno interior */
+    border-radius: 12px;        /* esquinas bien redondeadas */
+    width: 220px;               /* anchura fija de cada tarjeta */
     text-align: center;
 }
 
+/* Imagen dentro de la tarjeta */
 .mobile-card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
+    width: 100%;                /* ocupa todo el ancho de la tarjeta */
+    height: 150px;              /* altura fija para que todas las imágenes sean iguales */
+    object-fit: cover;          /* recorta la imagen para que llene el espacio sin deformarse */
+    border-radius: 8px;         /* esquinas redondeadas en la imagen */
+    margin-bottom: 15px;        /* espacio entre imagen y texto */
 }
 
-/* Botón comprar */
+/* Botón "Ver producto" dentro de la tarjeta */
 .btn-comprar {
-    display: inline-block;
+    display: inline-block;      /* permite aplicar padding a un enlace */
     margin-top: 10px;
     padding: 10px 20px;
-    background: #3b82f6;
+    background: #3b82f6;        /* fondo azul */
     color: white;
     text-decoration: none;
     border-radius: 6px;
@@ -137,6 +143,7 @@ body {
      SOBRE NOSOTROS
      ======================================== */
 
+/* Sección "Sobre Nosotros" */
 .about {
     text-align: center;
     padding: 60px 20px;
@@ -147,11 +154,12 @@ body {
     font-size: 2rem;
 }
 
+/* Párrafo de texto de la sección */
 .about p {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 600px;           /* limita el ancho del párrafo para que no sea demasiado largo */
+    margin: 0 auto;             /* centra el párrafo horizontalmente */
     color: #cbd5f5;
-    line-height: 1.6;
+    line-height: 1.6;           /* aumenta el espacio entre líneas para mejor legibilidad */
 }
 
 
@@ -159,10 +167,11 @@ body {
      CONTACTO
      ======================================== */
 
+/* Sección de contacto */
 .contact {
     text-align: center;
     padding: 60px 20px;
-    background-color: #1e293b;
+    background-color: #1e293b; /* fondo más claro para diferenciar la sección */
 }
 
 .contact h2 {
@@ -171,7 +180,7 @@ body {
 }
 
 .contact p {
-    margin: 10px 0;
+    margin: 10px 0;             /* espacio entre las líneas de contacto */
     color: #cbd5f5;
 }
 
@@ -180,9 +189,10 @@ body {
      PIE DE PÁGINA
      ======================================== */
 
+/* Footer con el copyright */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #020617;
-    color: #94a3b8;
+    background-color: #020617; /* fondo casi negro */
+    color: #94a3b8;             /* texto gris claro */
 }

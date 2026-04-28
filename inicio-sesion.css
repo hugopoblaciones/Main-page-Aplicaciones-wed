@@ -1,0 +1,85 @@
+/* ========================================
+     ESTILOS DE INICIO DE SESIÓN
+     ======================================== */
+
+/* Centra verticalmente y horizontalmente el formulario en la pantalla */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #020617); /* fondo degradado igual que el resto de la web */
+    display: flex;              /* activa Flexbox para centrar el formulario */
+    justify-content: center;    /* centra horizontalmente */
+    align-items: center;        /* centra verticalmente */
+    min-height: 100vh;          /* la página ocupa al menos el 100% de la altura de la ventana */
+    color: white;
+    flex-direction: column;     /* apila los elementos en columna */
+    gap: 15px;                  /* espacio entre la caja y los enlaces de abajo */
+}
+
+/* Caja del formulario de inicio de sesión */
+.login-container {
+    background-color: #1e293b; /* fondo azul oscuro */
+    padding: 40px;              /* espacio interior amplio */
+    border-radius: 12px;        /* esquinas redondeadas */
+    width: 100%;
+    max-width: 350px;           /* ancho máximo de la caja */
+    text-align: center;
+    display: flex;              /* organiza los elementos en columna */
+    flex-direction: column;
+    gap: 15px;                  /* espacio entre elementos */
+}
+
+/* Título "Iniciar Sesión" */
+.login-container h2 {
+    font-size: 1.8rem;
+    color: #60a5fa;             /* azul claro para destacar el título */
+}
+
+/* El formulario organiza los campos en columna */
+.login-container form {
+    display: flex;
+    flex-direction: column;     /* campos uno debajo del otro */
+    gap: 15px;                  /* espacio entre campos */
+}
+
+/* Estilo de los campos de texto */
+.login-container input {
+    width: 100%;
+    padding: 12px 15px;         /* espacio interior para buen tamaño */
+    border: none;               /* sin borde visible */
+    border-radius: 6px;
+    background-color: #0f172a; /* fondo oscuro */
+    color: white;
+    font-size: 1rem;
+}
+
+/* Texto de ayuda dentro del campo vacío */
+.login-container input::placeholder {
+    color: #64748b;             /* color gris */
+}
+
+/* Botón principal "Iniciar Sesión" */
+.btn-login {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #3b82f6, #2563eb); /* degradado azul */
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Enlace secundario "¿No tienes cuenta? Regístrate" */
+.btn-secundario {
+    color: #60a5fa;             /* azul claro para que sea llamativo pero diferente al botón */
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* Enlace "Volver a la tienda" */
+.volver {
+    color: #94a3b8;             /* gris claro, menos llamativo */
+    text-decoration: none;
+    font-size: 0.9rem;
+}

@@ -2,48 +2,67 @@
      PÁGINA DE PRODUCTO - Google Pixel 8
      ======================================== -->
 
+<!-- DOCTYPE: declara que el documento usa HTML5 -->
 <!DOCTYPE html>
+
+<!-- html: etiqueta raíz. lang="es" indica idioma español -->
 <html lang="es">
 
+<!-- head: configuración de la página, no visible por el usuario -->
 <head>
+    <!-- meta charset: permite usar tildes y caracteres especiales -->
     <meta charset="UTF-8">
+    <!-- title: texto de la pestaña del navegador -->
     <title>Google Pixel 8 - Tech Wise</title>
+    <!-- link: carga el CSS general (fondo, fuente, navbar...) -->
     <link rel="stylesheet" href="styles.css">
+    <!-- link: carga el CSS específico de las páginas de producto -->
     <link rel="stylesheet" href="producto.css">
 </head>
 
+<!-- body: contenido visible de la página -->
 <body>
 
-    <!-- Encabezado -->
+    <!-- header navbar: barra de navegación superior fija -->
     <header class="navbar">
+        <!-- h2 logo: nombre de la tienda como logo -->
         <h2 class="logo">Tech Wise</h2>
+        <!-- nav: enlaces del menú de navegación -->
         <nav>
             <a href="index.html">Inicio</a>
+            <!-- a: enlace con # que va directamente a la sección de móviles de index.html -->
             <a href="index.html#moviles">Móviles</a>
             <a href="carrito.html">Carrito</a>
-            <a href="login.html" class="btn-nav">Iniciar Sesión</a>
-            <a href="login.html" class="btn-nav">Registrarme</a>
+            <!-- class="btn-nav": estos enlaces tienen apariencia de botón -->
+            <a href="inicio-sesion.html" class="btn-nav">Iniciar Sesión</a>
+            <a href="registro.html" class="btn-nav">Registrarme</a>
         </nav>
     </header>
 
-    <!-- Contenido del producto -->
+    <!-- main producto-container: contenido principal con imagen e información del producto -->
     <main class="producto-container">
-        
-        <!-- Imagen -->
+
+        <!-- div producto-imagen: bloque que contiene la foto del móvil -->
         <div class="producto-imagen">
+            <!-- img: muestra la imagen. src=ruta del archivo, alt=texto si la imagen no carga -->
             <img src="google pixel 8.jpg" alt="Google Pixel 8">
         </div>
 
-        <!-- Información -->
+        <!-- div producto-info: bloque con nombre, precio, descripción y botones -->
         <div class="producto-info">
+            <!-- h1: nombre del producto, el título más importante de la página -->
             <h1>Google Pixel 8</h1>
+            <!-- p precio: precio del móvil (estilo verde definido en producto.css) -->
             <p class="precio">799€</p>
+            <!-- p descripcion: texto descriptivo del producto -->
             <p class="descripcion">
                 El Google Pixel 8 trae la mejor experiencia Android pura con
                 funciones de IA avanzadas y 7 años de actualizaciones.
             </p>
-            
+
+            <!-- ul caracteristicas: lista sin numeración con las especificaciones técnicas -->
             <ul class="caracteristicas">
+                <!-- li: cada elemento de la lista es una característica del móvil -->
                 <li>Pantalla de 6.2 pulgadas</li>
                 <li>Cámara de 50 MP con IA</li>
                 <li>Procesador Google Tensor G3</li>
@@ -51,12 +70,15 @@
                 <li>Carga inalámbrica</li>
             </ul>
 
+            <!-- a btn-comprar: botón verde para añadir el producto al carrito -->
             <a href="carrito.html" class="btn-comprar">Añadir al carrito</a>
+            <!-- a volver: enlace secundario para ir directamente al carrito -->
             <a href="carrito.html" class="volver">Ver carrito</a>
         </div>
 
     </main>
 
+    <!-- footer: pie de página con copyright -->
     <footer>
         <p>© 2026 Tech Wise - Tienda Online</p>
     </footer>

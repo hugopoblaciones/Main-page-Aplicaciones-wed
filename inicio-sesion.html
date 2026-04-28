@@ -1,0 +1,53 @@
+<!-- ========================================
+     PÁGINA DE INICIO DE SESIÓN
+     ======================================== -->
+
+<!-- DOCTYPE: declara que el documento usa HTML5 -->
+<!DOCTYPE html>
+
+<!-- html: etiqueta raíz. lang="es" indica idioma español -->
+<html lang="es">
+
+<!-- head: configuración de la página, no visible por el usuario -->
+<head>
+    <!-- meta charset: permite usar tildes y caracteres especiales -->
+    <meta charset="UTF-8">
+    <!-- title: texto de la pestaña del navegador -->
+    <title>Iniciar Sesión - Tech Wise</title>
+    <!-- link: carga el CSS general (fondo, fuente...) -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- link: carga el CSS específico de esta página -->
+    <link rel="stylesheet" href="inicio-sesion.css">
+</head>
+
+<!-- body: contenido visible de la página -->
+<body>
+
+    <!-- div login-container: caja central que contiene el formulario de inicio de sesión -->
+    <div class="login-container">
+        <!-- h2: título del formulario -->
+        <h2>Iniciar Sesión</h2>
+
+        <!-- form: contenedor del formulario -->
+        <form>
+            <!-- input type="email": campo que valida que se escriba un email correcto -->
+            <!-- placeholder: texto de guía que desaparece al escribir -->
+            <!-- required: campo obligatorio -->
+            <input type="email" placeholder="Correo electrónico" required>
+
+            <!-- input type="password": campo que oculta lo que se escribe con asteriscos -->
+            <input type="password" placeholder="Contraseña" required>
+
+            <!-- a btn-login: botón para iniciar sesión -->
+            <a href="#" class="btn-login">Iniciar Sesión</a>
+        </form>
+
+        <!-- a: enlace para ir a la página de registro si no tienes cuenta -->
+        <a href="registro.html" class="btn-secundario">¿No tienes cuenta? Regístrate</a>
+
+        <!-- a volver: enlace para regresar a la página principal -->
+        <a href="index.html" class="volver">Volver a la tienda</a>
+    </div>
+
+</body>
+</html>

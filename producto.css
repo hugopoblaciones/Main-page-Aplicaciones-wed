@@ -1,88 +1,96 @@
 /* ========================================
      ESTILOS DE PÁGINAS DE PRODUCTO
+     (se usa en los 4 móviles)
      ======================================== */
 
-/* Contenedor del producto */
+/* Contenedor principal que organiza imagen e información en fila */
 .producto-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    padding: 80px 40px;
-    flex-wrap: wrap;
+    display: flex;              /* organiza imagen e info en fila con Flexbox */
+    justify-content: center;    /* centra el contenido horizontalmente */
+    align-items: center;        /* alinea verticalmente al centro */
+    gap: 60px;                  /* espacio entre la imagen y la información */
+    padding: 80px 40px;         /* espacio interior */
+    flex-wrap: wrap;            /* si la pantalla es pequeña, pone imagen e info una debajo de la otra */
 }
 
-/* Imagen del producto */
+/* Bloque de la imagen del producto */
 .producto-imagen {
-    flex: 1;
-    max-width: 400px;
-    min-width: 300px;
+    flex: 1;                    /* crece para ocupar el espacio disponible */
+    max-width: 400px;           /* tamaño máximo */
+    min-width: 300px;           /* tamaño mínimo para que no quede demasiado pequeña */
 }
 
+/* La imagen ocupa todo el ancho de su contenedor */
 .producto-imagen img {
     width: 100%;
-    border-radius: 12px;
+    border-radius: 12px;        /* esquinas redondeadas en la imagen */
 }
 
-/* Información del producto */
+/* Bloque de información del producto (nombre, precio, descripción...) */
 .producto-info {
-    flex: 1;
+    flex: 1;                    /* crece para ocupar el espacio disponible */
     max-width: 500px;
     min-width: 300px;
 }
 
+/* Título con el nombre del móvil */
 .producto-info h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #60a5fa;
+    color: #60a5fa;             /* azul claro para destacar el nombre */
 }
 
+/* Precio del producto */
 .precio {
     font-size: 2rem;
     font-weight: bold;
-    color: #22c55e;
+    color: #22c55e;             /* verde para destacar el precio */
     margin-bottom: 25px;
 }
 
+/* Párrafo de descripción del móvil */
 .descripcion {
-    color: #cbd5f5;
-    line-height: 1.6;
+    color: #cbd5f5;             /* azul muy claro para el texto secundario */
+    line-height: 1.6;           /* mayor espacio entre líneas para mejor lectura */
     margin-bottom: 25px;
 }
 
-/* Lista de características */
+/* Lista de características técnicas del móvil */
 .caracteristicas {
-    list-style: none;
+    list-style: none;           /* elimina los puntos de la lista */
     margin-bottom: 30px;
     padding: 20px;
-    background-color: #1e293b;
+    background-color: #1e293b; /* fondo azul oscuro para la caja de características */
     border-radius: 8px;
 }
 
+/* Cada característica individual */
 .caracteristicas li {
-    padding: 8px 0;
+    padding: 8px 0;             /* espacio arriba y abajo de cada elemento */
     color: #cbd5f5;
-    border-bottom: 1px solid #334155;
+    border-bottom: 1px solid #334155; /* línea separadora entre características */
 }
 
+/* La última característica no tiene línea separadora abajo */
+/* :last-child es una pseudoclase que selecciona solo el último elemento de la lista */
 .caracteristicas li:last-child {
     border-bottom: none;
 }
 
-/* Botón añadir al carrito */
+/* Botón verde "Añadir al carrito" */
 .btn-comprar {
-    display: inline-block;
+    display: inline-block;      /* permite aplicar padding a un enlace */
     padding: 14px 40px;
-    background: #22c55e;
+    background: #22c55e;        /* fondo verde */
     color: white;
     text-decoration: none;
     border-radius: 8px;
     font-size: 1.1rem;
-    margin-right: 20px;
+    margin-right: 20px;         /* espacio entre este botón y el enlace "Ver carrito" */
 }
 
-/* Enlace ver carrito */
+/* Enlace "Ver carrito" (menos llamativo que el botón principal) */
 .volver {
-    color: #94a3b8;
+    color: #94a3b8;             /* gris claro para que sea menos prominente */
     text-decoration: none;
 }

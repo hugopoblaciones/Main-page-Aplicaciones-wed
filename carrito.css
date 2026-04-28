@@ -2,40 +2,42 @@
      ESTILOS DEL CARRITO
      ======================================== */
 
-/* Contenedor principal */
+/* Contenedor principal del carrito, limita el ancho y lo centra */
 .carrito-container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 60px 20px;
+    max-width: 900px;           /* ancho máximo para que no se extienda demasiado en pantallas grandes */
+    margin: 0 auto;             /* centra el contenedor horizontalmente en la página */
+    padding: 60px 20px;         /* espacio interior */
     text-align: center;
 }
 
+/* Título "Carrito de Compras" */
 .carrito-container h1 {
     font-size: 2rem;
-    margin-bottom: 40px;
-    color: #60a5fa;
+    margin-bottom: 40px;        /* espacio entre el título y el contenido */
+    color: #60a5fa;             /* azul claro para destacar el título */
 }
 
-/* Mensaje carrito vacío */
+/* Caja que muestra el mensaje de carrito vacío */
 .carrito-vacio {
-    color: #94a3b8;
-    padding: 40px;
-    background-color: #1e293b;
-    border-radius: 12px;
-    margin-bottom: 30px;
+    color: #94a3b8;             /* texto gris para indicar que no hay contenido */
+    padding: 40px;              /* espacio interior amplio */
+    background-color: #1e293b; /* fondo azul oscuro para la caja */
+    border-radius: 12px;        /* esquinas redondeadas */
+    margin-bottom: 30px;        /* espacio entre la caja y el botón */
 }
 
-/* Botón seguir comprando */
+/* Contenedor de los botones del carrito */
 .botones-carrito {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    display: flex;              /* organiza los botones en fila con Flexbox */
+    justify-content: center;    /* centra los botones */
+    gap: 20px;                  /* espacio entre botones */
 }
 
+/* Botón "Seguir Comprando" */
 .btn-seguir {
-    padding: 14px 30px;
-    background-color: #334155;
+    padding: 14px 30px;         /* relleno para darle buen tamaño al botón */
+    background-color: #334155; /* fondo gris azulado */
     color: white;
-    text-decoration: none;
-    border-radius: 8px;
+    text-decoration: none;      /* sin subrayado */
+    border-radius: 8px;         /* esquinas redondeadas */
 }

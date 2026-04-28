@@ -2,44 +2,60 @@
      CARRITO DE COMPRAS
      ======================================== -->
 
+<!-- DOCTYPE: declara que el documento usa HTML5 -->
 <!DOCTYPE html>
+
+<!-- html: etiqueta raíz. lang="es" indica idioma español -->
 <html lang="es">
 
+<!-- head: configuración de la página, no visible por el usuario -->
 <head>
+    <!-- meta charset: permite usar tildes y caracteres especiales -->
     <meta charset="UTF-8">
+    <!-- title: texto de la pestaña del navegador -->
     <title>Carrito - Tech Wise</title>
+    <!-- link: carga el CSS general (fondo, fuente, navbar...) -->
     <link rel="stylesheet" href="styles.css">
+    <!-- link: carga el CSS específico del carrito -->
     <link rel="stylesheet" href="carrito.css">
 </head>
 
+<!-- body: contenido visible de la página -->
 <body>
 
-    <!-- Encabezado -->
+    <!-- header navbar: barra de navegación superior fija -->
     <header class="navbar">
+        <!-- h2 logo: nombre de la tienda como logo -->
         <h2 class="logo">Tech Wise</h2>
+        <!-- nav: enlaces del menú de navegación -->
         <nav>
+            <!-- a: enlace a la página de inicio -->
             <a href="index.html">Inicio</a>
+            <!-- a: enlace que lleva a la sección de móviles de la página principal -->
             <a href="index.html#moviles">Móviles</a>
+            <!-- a: enlace a esta misma página del carrito -->
             <a href="carrito.html">Carrito</a>
         </nav>
     </header>
 
-    <!-- Contenido principal -->
+    <!-- main carrito-container: contenido principal del carrito -->
     <main class="carrito-container">
+        <!-- h1: título principal de la página -->
         <h1>Carrito de Compras</h1>
 
-        <!-- Mensaje de carrito vacío -->
+        <!-- div carrito-vacio: mensaje que se muestra cuando no hay productos en el carrito -->
         <div class="carrito-vacio">
             <p>Tu carrito está vacío</p>
         </div>
 
-        <!-- Botón seguir comprando -->
+        <!-- div botones-carrito: contenedor del botón de acción -->
         <div class="botones-carrito">
+            <!-- a btn-seguir: botón para volver a la tienda y seguir comprando -->
             <a href="index.html" class="btn-seguir">Seguir Comprando</a>
         </div>
     </main>
 
-    <!-- Pie de página -->
+    <!-- footer: pie de página con copyright -->
     <footer>
         <p>© 2026 Tech Wise - Tienda Online</p>
     </footer>
