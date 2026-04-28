@@ -12,7 +12,7 @@
 
 /* Título "Carrito de Compras" */
 .carrito-container h1 {
-    font-size: 2rem;
+    font-size: 32px;
     margin-bottom: 40px;        /* espacio entre el título y el contenido */
     color: #60a5fa;             /* azul claro para destacar el título */
 }
@@ -26,11 +26,9 @@
     margin-bottom: 30px;        /* espacio entre la caja y el botón */
 }
 
-/* Contenedor de los botones del carrito */
+/* Contenedor del botón del carrito */
 .botones-carrito {
-    display: flex;              /* organiza los botones en fila con Flexbox */
-    justify-content: center;    /* centra los botones */
-    gap: 20px;                  /* espacio entre botones */
+    text-align: center;         /* centra el botón */
 }
 
 /* Botón "Seguir Comprando" */

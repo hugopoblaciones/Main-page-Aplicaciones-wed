@@ -8,16 +8,14 @@
     display: flex;              /* organiza imagen e info en fila con Flexbox */
     justify-content: center;    /* centra el contenido horizontalmente */
     align-items: center;        /* alinea verticalmente al centro */
-    gap: 60px;                  /* espacio entre la imagen y la información */
     padding: 80px 40px;         /* espacio interior */
     flex-wrap: wrap;            /* si la pantalla es pequeña, pone imagen e info una debajo de la otra */
 }
 
 /* Bloque de la imagen del producto */
 .producto-imagen {
-    flex: 1;                    /* crece para ocupar el espacio disponible */
-    max-width: 400px;           /* tamaño máximo */
-    min-width: 300px;           /* tamaño mínimo para que no quede demasiado pequeña */
+    width: 400px;               /* ancho fijo del bloque de imagen */
+    margin: 30px;               /* espacio alrededor */
 }
 
 /* La imagen ocupa todo el ancho de su contenedor */
@@ -28,21 +26,20 @@
 
 /* Bloque de información del producto (nombre, precio, descripción...) */
 .producto-info {
-    flex: 1;                    /* crece para ocupar el espacio disponible */
-    max-width: 500px;
-    min-width: 300px;
+    width: 450px;               /* ancho fijo del bloque de información */
+    margin: 30px;               /* espacio alrededor */
 }
 
 /* Título con el nombre del móvil */
 .producto-info h1 {
-    font-size: 2.5rem;
+    font-size: 40px;
     margin-bottom: 20px;
     color: #60a5fa;             /* azul claro para destacar el nombre */
 }
 
 /* Precio del producto */
 .precio {
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: bold;
     color: #22c55e;             /* verde para destacar el precio */
     margin-bottom: 25px;
@@ -71,21 +68,15 @@
     border-bottom: 1px solid #334155; /* línea separadora entre características */
 }
 
-/* La última característica no tiene línea separadora abajo */
-/* :last-child es una pseudoclase que selecciona solo el último elemento de la lista */
-.caracteristicas li:last-child {
-    border-bottom: none;
-}
-
 /* Botón verde "Añadir al carrito" */
 .btn-comprar {
     display: inline-block;      /* permite aplicar padding a un enlace */
     padding: 14px 40px;
-    background: #22c55e;        /* fondo verde */
+    background-color: #22c55e; /* fondo verde */
     color: white;
     text-decoration: none;
     border-radius: 8px;
-    font-size: 1.1rem;
+    font-size: 18px;
     margin-right: 20px;         /* espacio entre este botón y el enlace "Ver carrito" */
 }
 

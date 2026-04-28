@@ -11,9 +11,9 @@
 
 /* Estilo base del cuerpo de la página */
 body {
-    font-family: 'Segoe UI', sans-serif;                    /* tipo de letra */
-    background: linear-gradient(135deg, #0f172a, #020617);  /* fondo degradado en diagonal (135 grados) de azul oscuro a negro */
-    color: white;                                           /* color del texto en toda la página */
+    font-family: 'Segoe UI', sans-serif; /* tipo de letra */
+    background-color: #0f172a;           /* color de fondo oscuro de toda la página */
+    color: white;                        /* color del texto en toda la página */
 }
 
 
@@ -23,33 +23,31 @@ body {
 
 /* Barra de navegación superior */
 .navbar {
-    display: flex;              /* activa Flexbox para organizar logo y menú en fila */
+    display: flex;                  /* activa Flexbox para organizar logo y menú en fila */
     justify-content: space-between; /* pone el logo a la izquierda y el menú a la derecha */
-    align-items: center;        /* alinea verticalmente los elementos al centro */
-    padding: 20px 40px;         /* espacio interior: 20px arriba/abajo, 40px izquierda/derecha */
-    background-color: #0f172a; /* color de fondo de la barra (azul muy oscuro) */
-    position: sticky;           /* la barra se queda fija al hacer scroll */
-    top: 0;                     /* fijada en la parte superior de la pantalla */
+    align-items: center;            /* alinea verticalmente los elementos al centro */
+    padding: 20px 40px;             /* espacio interior: 20px arriba/abajo, 40px izquierda/derecha */
+    background-color: #0f172a;      /* color de fondo de la barra */
 }
 
 /* Estilo de los enlaces dentro del menú de navegación */
 .navbar a {
-    color: white;               /* texto blanco */
-    text-decoration: none;      /* elimina el subrayado de los enlaces */
-    margin-left: 20px;          /* separa cada enlace del anterior */
+    color: white;           /* texto blanco */
+    text-decoration: none;  /* elimina el subrayado de los enlaces */
+    margin-left: 20px;      /* separa cada enlace del anterior */
 }
 
 /* Estilo del logo Tech Wise */
 .logo {
-    color: #60a5fa;             /* color azul claro */
-    font-size: 1.8rem;          /* tamaño de letra (rem = relativo al tamaño base) */
-    font-weight: bold;          /* texto en negrita */
+    color: #60a5fa;         /* color azul claro */
+    font-size: 28px;        /* tamaño de letra */
+    font-weight: bold;      /* texto en negrita */
 }
 
 /* Botones "Iniciar Sesión" y "Registrarme" del menú */
 .btn-nav {
-    padding: 8px 16px;          /* relleno interior para dar tamaño de botón */
-    border-radius: 6px;         /* esquinas redondeadas */
+    padding: 8px 16px;      /* relleno interior para dar tamaño de botón */
+    border-radius: 6px;     /* esquinas redondeadas */
 }
 
 
@@ -59,29 +57,29 @@ body {
 
 /* Sección hero: el banner grande con título y botón */
 .hero {
-    text-align: center;         /* centra el texto horizontalmente */
-    padding: 120px 20px;        /* espacio interior grande para que quede espacioso */
+    text-align: center;     /* centra el texto horizontalmente */
+    padding: 120px 20px;    /* espacio interior grande para que quede espacioso */
 }
 
 /* Título principal del banner */
 .hero h1 {
-    font-size: 3rem;            /* letra grande */
-    margin-bottom: 20px;        /* espacio debajo del título */
+    font-size: 48px;        /* letra grande */
+    margin-bottom: 20px;    /* espacio debajo del título */
 }
 
 /* Párrafo descriptivo del banner */
 .hero p {
-    margin-bottom: 30px;        /* espacio debajo antes del botón */
-    color: #cbd5f5;             /* color azul muy claro */
+    margin-bottom: 30px;    /* espacio debajo antes del botón */
+    color: #cbd5f5;         /* color azul muy claro */
 }
 
 /* Botón "Ver Móviles" del banner */
 .btn {
-    background: linear-gradient(45deg, #3b82f6, #2563eb); /* fondo con degradado azul */
-    padding: 14px 30px;         /* relleno para que tenga buen tamaño */
-    border-radius: 8px;         /* esquinas redondeadas */
-    text-decoration: none;      /* sin subrayado */
-    color: white;               /* texto blanco */
+    background-color: #3b82f6; /* color de fondo azul */
+    padding: 14px 30px;        /* relleno para que tenga buen tamaño */
+    border-radius: 8px;        /* esquinas redondeadas */
+    text-decoration: none;     /* sin subrayado */
+    color: white;              /* texto blanco */
 }
 
 
@@ -91,14 +89,14 @@ body {
 
 /* Sección completa de los productos */
 .mobiles {
-    text-align: center;         /* centra el título y las tarjetas */
-    padding: 80px 20px;         /* espacio interior */
+    text-align: center;     /* centra el título y las tarjetas */
+    padding: 80px 20px;     /* espacio interior */
 }
 
 /* Título "Nuestros Móviles" */
 .mobiles h2 {
-    margin-bottom: 40px;        /* espacio entre el título y las tarjetas */
-    font-size: 2rem;
+    margin-bottom: 40px;    /* espacio entre el título y las tarjetas */
+    font-size: 32px;
 }
 
 /* Contenedor que agrupa todas las tarjetas en fila */
@@ -106,7 +104,6 @@ body {
     display: flex;              /* organiza las tarjetas en fila con Flexbox */
     justify-content: center;    /* centra las tarjetas horizontalmente */
     flex-wrap: wrap;            /* si no caben en una fila, las baja a la siguiente */
-    gap: 30px;                  /* espacio entre tarjetas */
 }
 
 /* Tarjeta individual de cada móvil */
@@ -116,13 +113,13 @@ body {
     border-radius: 12px;        /* esquinas bien redondeadas */
     width: 220px;               /* anchura fija de cada tarjeta */
     text-align: center;
+    margin: 15px;               /* espacio alrededor de cada tarjeta */
 }
 
 /* Imagen dentro de la tarjeta */
 .mobile-card img {
     width: 100%;                /* ocupa todo el ancho de la tarjeta */
     height: 150px;              /* altura fija para que todas las imágenes sean iguales */
-    object-fit: cover;          /* recorta la imagen para que llene el espacio sin deformarse */
     border-radius: 8px;         /* esquinas redondeadas en la imagen */
     margin-bottom: 15px;        /* espacio entre imagen y texto */
 }
@@ -132,7 +129,7 @@ body {
     display: inline-block;      /* permite aplicar padding a un enlace */
     margin-top: 10px;
     padding: 10px 20px;
-    background: #3b82f6;        /* fondo azul */
+    background-color: #3b82f6; /* fondo azul */
     color: white;
     text-decoration: none;
     border-radius: 6px;
@@ -151,7 +148,7 @@ body {
 
 .about h2 {
     margin-bottom: 20px;
-    font-size: 2rem;
+    font-size: 32px;
 }
 
 /* Párrafo de texto de la sección */
@@ -175,7 +172,7 @@ body {
 
 .contact h2 {
     margin-bottom: 20px;
-    font-size: 2rem;
+    font-size: 32px;
 }
 
 .contact p {
